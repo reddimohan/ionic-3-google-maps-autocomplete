@@ -1,8 +1,8 @@
 
 ### How to Install
-Clone the repo
-do `npm install`
-run the ionic server `ionic serve`
+Clone the repo <br>
+Run `npm install` to install the dependencies<br>
+`ionic serve` to run the app<br>
 
 ### IMP
 Google Maps API Key is required to see the map, you can go through the below link to create one and make sure you have given the permissions to your app
