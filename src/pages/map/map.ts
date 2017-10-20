@@ -27,7 +27,6 @@ export class MapPage {
 
   map: any;
   address = '';
-  // search: boolean = false;
 
   constructor(public navCtrl: NavController,
     public geolocation: Geolocation,
@@ -61,7 +60,6 @@ export class MapPage {
       var mapEle = this.mapElement.nativeElement;
       this.map = new google.maps.Map(mapEle, {
         zoom: 16,
-        // center: { lat: JSON.parse(localStorage.getItem('current_latlong')).lat, lng: JSON.parse(localStorage.getItem('current_latlong')).long },
         center: { lat: 12.971599, lng: 77.594563 },
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         styles: [{ "featureType": "water", "elementType": "geometry", "stylers": [{ "color": "#e9e9e9" }, { "lightness": 17 }] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "color": "#f5f5f5" }, { "lightness": 20 }] }, { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{ "color": "#ffffff" }, { "lightness": 17 }] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{ "color": "#ffffff" }, { "lightness": 29 }, { "weight": 0.2 }] }, { "featureType": "road.arterial", "elementType": "geometry", "stylers": [{ "color": "#ffffff" }, { "lightness": 18 }] }, { "featureType": "road.local", "elementType": "geometry", "stylers": [{ "color": "#ffffff" }, { "lightness": 16 }] }, { "featureType": "poi", "elementType": "geometry", "stylers": [{ "color": "#f5f5f5" }, { "lightness": 21 }] }, { "featureType": "poi.park", "elementType": "geometry", "stylers": [{ "color": "#dedede" }, { "lightness": 21 }] }, { "elementType": "labels.text.stroke", "stylers": [{ "visibility": "on" }, { "color": "#ffffff" }, { "lightness": 16 }] }, { "elementType": "labels.text.fill", "stylers": [{ "saturation": 36 }, { "color": "#333333" }, { "lightness": 40 }] }, { "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "transit", "elementType": "geometry", "stylers": [{ "color": "#f2f2f2" }, { "lightness": 19 }] }, { "featureType": "administrative", "elementType": "geometry.fill", "stylers": [{ "color": "#fefefe" }, { "lightness": 20 }] }, { "featureType": "administrative", "elementType": "geometry.stroke", "stylers": [{ "color": "#fefefe" }, { "lightness": 17 }, { "weight": 1.2 }] }],
@@ -91,8 +89,6 @@ export class MapPage {
       google.maps.event.addListenerOnce(this.map, 'idle', () => {
         google.maps.event.trigger(this.map, 'resize');
         mapEle.classList.add('show-map');
-        // this.bounceMap(markers);
-        // this.getCurrentPositionfromStorage(markers)
       });
 
       google.maps.event.addListener(this.map, 'bounds_changed', () => {
@@ -106,7 +102,6 @@ export class MapPage {
   }
 
   initAutocomplete(): void {
-    // reference : https://github.com/driftyco/ionic/issues/7223
     this.addressElement = this.searchbar.nativeElement.querySelector('.searchbar-input');
     this.createAutocomplete(this.addressElement).subscribe((location) => {
       console.log('Searchdata', location);
@@ -117,8 +112,6 @@ export class MapPage {
         zoom: 16
       };
       this.map.setOptions(options);
-      // this.addMarker(location, "Mein gesuchter Standort");
-
     });
   }
 
@@ -181,7 +174,6 @@ export class MapPage {
           let latLngObj = {'lat': place.geometry.location.lat(), 'long': place.geometry.location.lng()}
           this.getAddress(latLngObj);
           sub.next(place.geometry.location);
-          // sub.complete();
         }
       });
     });
@@ -216,14 +208,6 @@ export class MapPage {
       google.maps.event.trigger(this.map, 'resize');
     }, 200);
   }
-
-  // toggleSearch() {
-  //   if (this.search) {
-  //     this.search = false;
-  //   } else {
-  //     this.search = true;
-  //   }
-  // }
 
   closeModal() {
     this.viewCtrl.dismiss();
