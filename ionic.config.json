@@ -1,8 +1,8 @@
 {
   "name": "ionic3-map-address-autocomplete",
-  "app_id": "",
-  "type": "ionic-angular",
   "integrations": {
     "cordova": {}
-  }
+  },
+  "type": "ionic-angular",
+  "pro_id": "0af443eb"
 }

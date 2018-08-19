@@ -119,6 +119,7 @@ export class MapPage {
     this.spinner.load();
     this.geolocation.getCurrentPosition().then((position) => {
       let latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+      console.log(latLng)
       let latLngObj = {'lat': position.coords.latitude, 'long': position.coords.longitude};
       // Display  Marker
       this.map.setCenter(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
