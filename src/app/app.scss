@@ -24,6 +24,17 @@
   font-family: 'Play-Bold';
   src: url('../assets/fonts/play/Play-Bold.ttf') format('truetype');
 }
+
+// Fonts
+@font-face {
+  font-family: 'Libre-Regular';
+  src: url('../assets/fonts/li/LibreFranklin-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Libre-Light';
+  src: url('../assets/fonts/li/LibreFranklin-Light.ttf') format('truetype');
+}
+
 .custom-btn {
   background-color: $primary-btn-background;
   padding: 17px 30px !important;
