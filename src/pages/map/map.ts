@@ -72,7 +72,7 @@ export class MapPage {
 
         // Map drag started
         this.map.addListener('dragstart', function() {
-          console.log('Drag start');
+          // console.log('Drag start');
         });
         // Map dragging
         this.map.addListener('drag', function() {
@@ -82,7 +82,7 @@ export class MapPage {
         this.map.addListener('dragend', function() {
           let map_center = that.getMapCenter();
           let latLngObj = {'lat': map_center.lat(), 'long': map_center.lng() };
-          console.log(latLngObj);
+          // console.log(latLngObj);
           that.getAddress(latLngObj);
         });
 
@@ -119,7 +119,7 @@ export class MapPage {
     this.spinner.load();
     this.geolocation.getCurrentPosition().then((position) => {
       let latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-      console.log(latLng)
+      // console.log(latLng)
       let latLngObj = {'lat': position.coords.latitude, 'long': position.coords.longitude};
       // Display  Marker
       this.map.setCenter(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
@@ -148,7 +148,7 @@ export class MapPage {
         } else {
           this.address = s_address.results[0].formatted_address;
           this.getAddressComponentByPlace(s_address.results[0], latLngObj);
-          console.log(this.address);
+          // console.log(this.address);
         }
       },
       err => {
@@ -211,7 +211,8 @@ export class MapPage {
   }
 
   closeModal() {
-    this.viewCtrl.dismiss();
+    let address = this.address
+    this.viewCtrl.dismiss(address);
   }
 
   errorAlert(title, message) {
