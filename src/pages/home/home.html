@@ -7,10 +7,10 @@
 
 <ion-content padding>
   <div class="home_page">
-    <button ion-button full class="primary-btn" (click)="getAddress()">Get Address</button>
+    <button ion-button full class="primary-btn" (click)="getAddress()">Get Address from Map</button>
   </div>
   <div class="">
-    <ion-card>
+    <ion-card *ngIf="result.address">
 
       <ion-item>
         <span item-start>{{result.card_title}}</span>
