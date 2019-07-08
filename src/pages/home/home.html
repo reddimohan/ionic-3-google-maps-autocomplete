@@ -12,19 +12,13 @@
   <div class="">
     <ion-card>
 
-      <ion-item class="address_text">
-        <ion-icon item-start large></ion-icon>
-        <h2>{{result.card_title}}</h2>
-        <p text-wrap>{{result.address}}</p>
+      <ion-item>
+        <span item-start>{{result.card_title}}</span>
       </ion-item>
 
-      <ion-item>
-        <span item-start>18 min</span>
-        <span item-start>(2.6 mi)</span>
-        <button ion-button icon-start clear item-end>
-          <ion-icon name="navigate"></ion-icon>
-          Start
-        </button>
+      <ion-item class="address_text">
+        <ion-icon item-start large></ion-icon>
+        <p text-wrap>{{result.address}}</p>
       </ion-item>
 
     </ion-card>

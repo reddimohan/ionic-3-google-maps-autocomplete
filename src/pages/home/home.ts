@@ -14,6 +14,9 @@ import { IonicPage, NavController, NavParams, ModalController} from 'ionic-angul
   templateUrl: 'home.html',
 })
 export class HomePage {
+
+  result = {card_title: '', address: ''}
+  
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,

@@ -5,7 +5,6 @@ import 'rxjs/add/operator/map';
 
 /*
   Generated class for the MapProvider provider.
-
   See https://angular.io/docs/ts/latest/guide/dependency-injection.html
   for more info on providers and Angular DI.
 */
@@ -18,12 +17,12 @@ export class MapProvider {
   contentHeader: Headers = new Headers({'Content-Type': 'application/json'});
 
   constructor(public http: Http) {
-    this.google_api_key = 'AIzaSyCKA5hvn9vH1cIdiwGEwTgeyBhys2gHpI0';
+    this.google_api_key = 'KEY';
     console.log('Hello MapProvider Provider');
   }
 
   getAddress(params) {
-    let url = 'http://maps.googleapis.com/maps/api/geocode/json?latlng=' + params.lat + ',' + params.long;
+    let url = 'https://maps.googleapis.com/maps/api/geocode/json?key=' + this.google_api_key + '&latlng=' + params.lat + ',' + params.long;
     return this.GET(url);
   }
 
@@ -49,6 +48,5 @@ export class MapProvider {
     // });
     // return this.http.delete(url, options).map(res => res.json());
   }
-
 
 }
