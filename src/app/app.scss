@@ -35,6 +35,13 @@
   src: url('../assets/fonts/li/LibreFranklin-Light.ttf') format('truetype');
 }
 
+.primary-btn {
+  background-color: #675FA9;
+}
+.button-ios.activated, .button-md.activated, .button-md:hover:not(.disable-hover) {
+  background-color: #675FA1 !important;
+}
+
 .custom-btn {
   background-color: $primary-btn-background;
   padding: 17px 30px !important;

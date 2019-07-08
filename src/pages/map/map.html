@@ -12,13 +12,16 @@
   <div class="address-view">
     <ion-list>
       <ion-item no-lines class="help-text">
-        Drag map to select Address
+        Drag map to change Address
       </ion-item>
       <ion-item no-lines class="address-item">
         <ion-label stacked class="title-label">ADDRESS</ion-label>
         <ion-textarea class="address" [(ngModel)]="address"></ion-textarea>
       </ion-item>
       <ion-item>
+        <button ion-button full class="primary-btn" (click)="closeModal()">
+          Select
+        </button>
       </ion-item>
     </ion-list>
   </div>

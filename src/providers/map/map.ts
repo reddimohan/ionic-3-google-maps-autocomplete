@@ -5,7 +5,6 @@ import 'rxjs/add/operator/map';
 
 /*
   Generated class for the MapProvider provider.
-
   See https://angular.io/docs/ts/latest/guide/dependency-injection.html
   for more info on providers and Angular DI.
 */
@@ -49,6 +48,5 @@ export class MapProvider {
     // });
     // return this.http.delete(url, options).map(res => res.json());
   }
-
 
 }
