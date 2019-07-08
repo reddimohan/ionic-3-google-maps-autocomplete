@@ -18,12 +18,12 @@ export class MapProvider {
   contentHeader: Headers = new Headers({'Content-Type': 'application/json'});
 
   constructor(public http: Http) {
-    this.google_api_key = 'AIzaSyCKA5hvn9vH1cIdiwGEwTgeyBhys2gHpI0';
+    this.google_api_key = 'KEY';
     console.log('Hello MapProvider Provider');
   }
 
   getAddress(params) {
-    let url = 'http://maps.googleapis.com/maps/api/geocode/json?latlng=' + params.lat + ',' + params.long;
+    let url = 'https://maps.googleapis.com/maps/api/geocode/json?key=' + this.google_api_key + '&latlng=' + params.lat + ',' + params.long;
     return this.GET(url);
   }
 
