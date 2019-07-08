@@ -17,5 +17,6 @@ add the geolocation plugin
 `npm install --save @ionic-native/geolocation`
 
 ### Screenshots
-<img src="https://i.imgur.com/oSwBsc9.png" width="280">
-<img src="https://i.imgur.com/NwAOhIE.png" width="280">
+<img src="https://i.imgur.com/oSwBsc9.png" width="250">
+<img src="https://i.imgur.com/NwAOhIE.png" width="250">
+<img src="https://i.imgur.com/OBxBLG5.png" width="250">
