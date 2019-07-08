@@ -13,6 +13,7 @@ You can directly install below plugins If they are not installed using `npm inst
 add the geolocation plugin
 
 `ionic cordova plugin add cordova-plugin-geolocation`
+
 `npm install --save @ionic-native/geolocation`
 
 ### Screenshots
