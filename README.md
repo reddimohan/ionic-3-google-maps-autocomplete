@@ -153,6 +153,8 @@ Project Link: [https://github.com/reddimohan/ionic-3-google-maps-autocomplete](h
 [issues-shield]: https://img.shields.io/github/issues/reddimohan/ionic-3-google-maps-autocomplete.svg?style=flat-square
 [issues-url]: https://github.com/reddimohan/ionic-3-google-maps-autocomplete/issues
 [license-shield]: https://img.shields.io/github/license/reddimohan/ionic-3-google-maps-autocomplete.svg?style=flat-square
+[traffic-url]: https://github.com/reddimohan/ionic-3-google-maps-autocomplete/graphs/traffic
+[traffic-shield]: https://img.shields.io/github/traffic/reddimohan/ionic-3-google-maps-autocomplete.svg?style=flat-square
 [license-url]: https://github.com/reddimohan/ionic-3-google-maps-autocomplete/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/reddimohan
