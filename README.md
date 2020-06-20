@@ -79,6 +79,32 @@ https://developers.google.com/maps/documentation/javascript/get-api-key
     * Geocoding API
     * Maps JavaScript API
     * Places API
+### Setup for Ionic v3.x
+```sh
+Ionic:
+
+   Ionic CLI          : 6.10.1 (/usr/lib/node_modules/@ionic/cli)
+   Ionic Framework    : ionic-angular 3.7.1
+   @ionic/app-scripts : 3.2.4
+
+Cordova:
+
+   Cordova CLI       : 9.0.0 (cordova-lib@9.0.1)
+   Cordova Platforms : none
+   Cordova Plugins   : no whitelisted plugins (0 plugins total)
+
+Utility:
+
+   cordova-res (update available: 0.15.0) : 0.14.0
+   native-run                             : 1.0.0
+
+System:
+
+   Android SDK Tools : 26.1.1 (/home/mo/Android/Sdk)
+   NodeJS            : v10.20.1 (/usr/bin/node)
+   npm               : 6.14.4
+   OS                : Linux 5.4
+```
 
 ### Installation
 
