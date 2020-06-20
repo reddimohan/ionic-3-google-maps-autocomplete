@@ -71,6 +71,15 @@ npm install npm@latest -g
 npm install -g ionic@3.20.0 # If you want to install ionic 3
 ```
 
+* You need Google Map API keys
+Google Maps API Key is required to see the map, you can go through the below link to create one and make sure you have given the permissions to your app.
+https://developers.google.com/maps/documentation/javascript/get-api-key
+
+* Enable 3 Google Maps API services
+    * Geocoding API
+    * Maps JavaScript API
+    * Places API
+
 ### Installation
 
 1. Clone the repo
@@ -81,7 +90,17 @@ git clone https://github.com/reddimohan/ionic-3-google-maps-autocomplete.git
 ```sh
 npm install
 ```
+3. Update the Google Map API KEY in two places, which we created in *Prerequisites* section
+    * src/index.html - `<script src="https://maps.googleapis.com/maps/api/js?key=<KEY>&libraries=places"></script>`
+    * src/providers/map/map.ts - `this.google_api_key = '<KEY>';`
+4. Install below packages if they are not installed while `npm install`
+```sh
+ionic cordova plugin add cordova-plugin-geolocation
+npm install --save @ionic-native/geolocation
+```
 3. You can access the app at http://localhost:8100/ by executing `ionic serve`
+
+
 
 <!-- ROADMAP -->
 ## Roadmap
