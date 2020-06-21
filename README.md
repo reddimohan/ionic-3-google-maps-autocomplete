@@ -13,7 +13,12 @@
   <a href="https://github.com/reddimohan/ionic-3-google-maps-autocomplete">
   </a>
 
-  <h3 align="center">Ionic 3 Google maps Auto complete</h3>
+  <h3 align="center">
+    Ionic 3 Google maps Auto complete
+    <a href="https://github.com/reddimohan/ionic-4-and-5-google-maps-autocomplete">
+      Ionic 4 and 5 version here
+    </a>
+  </h3>
 
   <p align="center">
     Ionic 3 and Google maps integration, Search and Auto complete of address in map, drag map to get the address.
